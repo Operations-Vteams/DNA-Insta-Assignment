@@ -1,0 +1,6 @@
+framework module Pods_DNA_Insta_AssignmentTests {
+  umbrella header "Pods-DNA Insta AssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

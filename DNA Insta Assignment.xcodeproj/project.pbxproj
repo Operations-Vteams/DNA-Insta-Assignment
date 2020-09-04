@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4168039B2500D8F700BDBB33 /* ServiceFetchDataFromNetworkAndSaveToDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168039A2500D8F700BDBB33 /* ServiceFetchDataFromNetworkAndSaveToDatabase.swift */; };
+		4168039D2500DCE100BDBB33 /* sampleJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4168039C2500DCE100BDBB33 /* sampleJson.txt */; };
+		416803A12500F7FF00BDBB33 /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416803A02500F7FF00BDBB33 /* DatabaseManagerProtocol.swift */; };
+		416803A325010CE300BDBB33 /* PostsListDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416803A225010CE300BDBB33 /* PostsListDatabaseManager.swift */; };
+		416803A625011DF800BDBB33 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416803A525011DF800BDBB33 /* PostDetailViewController.swift */; };
+		416803A82501200200BDBB33 /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416803A72501200200BDBB33 /* PostDetailViewController.xib */; };
+		416803AA2501276700BDBB33 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416803A92501276700BDBB33 /* CoreDataManager.swift */; };
+		416803B02502538D00BDBB33 /* PostListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416803AF2502538D00BDBB33 /* PostListCollectionViewCell.xib */; };
+		416803B325025F2B00BDBB33 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416803B225025F2B00BDBB33 /* PinterestLayout.swift */; };
+		417BAA9F2500D02800B42B0E /* PostListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BAA9E2500D02800B42B0E /* PostListCell.swift */; };
+		4189C10A2500BBC90062EE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1092500BBC90062EE37 /* AppDelegate.swift */; };
+		4189C10C2500BBC90062EE37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C10B2500BBC90062EE37 /* SceneDelegate.swift */; };
+		4189C1142500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1122500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodeld */; };
+		4189C1162500BBCA0062EE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4189C1152500BBCA0062EE37 /* Assets.xcassets */; };
+		4189C1192500BBCA0062EE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4189C1172500BBCA0062EE37 /* LaunchScreen.storyboard */; };
+		4189C1242500BBCA0062EE37 /* PostsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1232500BBCA0062EE37 /* PostsListViewControllerTests.swift */; };
+		4189C12F2500BBCA0062EE37 /* DNA_Insta_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C12E2500BBCA0062EE37 /* DNA_Insta_AssignmentUITests.swift */; };
+		4189C13D2500BC150062EE37 /* PostsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4189C13C2500BC150062EE37 /* PostsListViewController.xib */; };
+		4189C1412500BD910062EE37 /* DnaInstaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1402500BD910062EE37 /* DnaInstaRouter.swift */; };
+		4189C1432500BE2F0062EE37 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1422500BE2F0062EE37 /* ViewControllerFactory.swift */; };
+		4189C1472500BE730062EE37 /* iOSViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1462500BE730062EE37 /* iOSViewControllerFactory.swift */; };
+		4189C14B2500BF2B0062EE37 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C14A2500BF2B0062EE37 /* NetworkManagerProtocol.swift */; };
+		4189C14D2500BF620062EE37 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C14C2500BF620062EE37 /* NetworkManager.swift */; };
+		4189C14F2500BFC00062EE37 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C14E2500BFC00062EE37 /* Parser.swift */; };
+		4189C1512500C0FC0062EE37 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1502500C0FC0062EE37 /* Flow.swift */; };
+		4189C1532500C22F0062EE37 /* FeedsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189C1522500C22F0062EE37 /* FeedsListModel.swift */; };
+		41DA23882500C66F0032F587 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA23872500C66F0032F587 /* PostsListViewController.swift */; };
+		41DA238B2500C7810032F587 /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA238A2500C7810032F587 /* PostsListViewModel.swift */; };
+		6F74EE604764AF91335A39E9 /* Pods_DNA_Insta_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87972066CF1D168C03622A16 /* Pods_DNA_Insta_Assignment.framework */; };
+		F82155CF8DEFCBC579728105 /* Pods_DNA_Insta_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9455C6741425A350277631FB /* Pods_DNA_Insta_AssignmentTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4189C1202500BBCA0062EE37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4189C0FE2500BBC90062EE37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4189C1052500BBC90062EE37;
+			remoteInfo = "DNA Insta Assignment";
+		};
+		4189C12B2500BBCA0062EE37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4189C0FE2500BBC90062EE37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4189C1052500BBC90062EE37;
+			remoteInfo = "DNA Insta Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31E6908BABFDFD4142FBF7BD /* Pods-DNA Insta AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA Insta AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-DNA Insta AssignmentTests/Pods-DNA Insta AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31F3CE99D38BF56FF6F097E1 /* Pods-DNA Insta Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA Insta Assignment.release.xcconfig"; path = "Target Support Files/Pods-DNA Insta Assignment/Pods-DNA Insta Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		4168039A2500D8F700BDBB33 /* ServiceFetchDataFromNetworkAndSaveToDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFetchDataFromNetworkAndSaveToDatabase.swift; sourceTree = "<group>"; };
+		4168039C2500DCE100BDBB33 /* sampleJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleJson.txt; sourceTree = "<group>"; };
+		416803A02500F7FF00BDBB33 /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
+		416803A225010CE300BDBB33 /* PostsListDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListDatabaseManager.swift; sourceTree = "<group>"; };
+		416803A525011DF800BDBB33 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		416803A72501200200BDBB33 /* PostDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
+		416803A92501276700BDBB33 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		416803AF2502538D00BDBB33 /* PostListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListCollectionViewCell.xib; sourceTree = "<group>"; };
+		416803B225025F2B00BDBB33 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		417BAA9E2500D02800B42B0E /* PostListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCell.swift; sourceTree = "<group>"; };
+		4189C1062500BBC90062EE37 /* DNA Insta Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DNA Insta Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4189C1092500BBC90062EE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4189C10B2500BBC90062EE37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4189C1132500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DNA_Insta_Assignment.xcdatamodel; sourceTree = "<group>"; };
+		4189C1152500BBCA0062EE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4189C1182500BBCA0062EE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4189C11A2500BBCA0062EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4189C11F2500BBCA0062EE37 /* DNA Insta AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DNA Insta AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4189C1232500BBCA0062EE37 /* PostsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewControllerTests.swift; sourceTree = "<group>"; };
+		4189C1252500BBCA0062EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4189C12A2500BBCA0062EE37 /* DNA Insta AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DNA Insta AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4189C12E2500BBCA0062EE37 /* DNA_Insta_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNA_Insta_AssignmentUITests.swift; sourceTree = "<group>"; };
+		4189C1302500BBCA0062EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4189C13C2500BC150062EE37 /* PostsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsListViewController.xib; sourceTree = "<group>"; };
+		4189C1402500BD910062EE37 /* DnaInstaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnaInstaRouter.swift; sourceTree = "<group>"; };
+		4189C1422500BE2F0062EE37 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		4189C1462500BE730062EE37 /* iOSViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactory.swift; sourceTree = "<group>"; };
+		4189C14A2500BF2B0062EE37 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		4189C14C2500BF620062EE37 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4189C14E2500BFC00062EE37 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4189C1502500C0FC0062EE37 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		4189C1522500C22F0062EE37 /* FeedsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsListModel.swift; sourceTree = "<group>"; };
+		41DA23872500C66F0032F587 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		41DA238A2500C7810032F587 /* PostsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
+		774F5D7F07D11B48E2B409AC /* Pods-DNA Insta AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA Insta AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-DNA Insta AssignmentTests/Pods-DNA Insta AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		87972066CF1D168C03622A16 /* Pods_DNA_Insta_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNA_Insta_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8975CB04BAF80708C0FB5A /* Pods-DNA Insta Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA Insta Assignment.debug.xcconfig"; path = "Target Support Files/Pods-DNA Insta Assignment/Pods-DNA Insta Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		9455C6741425A350277631FB /* Pods_DNA_Insta_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNA_Insta_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4189C1032500BBC90062EE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F74EE604764AF91335A39E9 /* Pods_DNA_Insta_Assignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4189C11C2500BBCA0062EE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82155CF8DEFCBC579728105 /* Pods_DNA_Insta_AssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4189C1272500BBCA0062EE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4168039E2500DCE400BDBB33 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4168039C2500DCE100BDBB33 /* sampleJson.txt */,
+				4189C1172500BBCA0062EE37 /* LaunchScreen.storyboard */,
+				4189C11A2500BBCA0062EE37 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		4168039F2500F7F100BDBB33 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				416803A92501276700BDBB33 /* CoreDataManager.swift */,
+				416803A02500F7FF00BDBB33 /* DatabaseManagerProtocol.swift */,
+				416803A225010CE300BDBB33 /* PostsListDatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		416803A425011DD800BDBB33 /* Post Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				416803A525011DF800BDBB33 /* PostDetailViewController.swift */,
+				416803A72501200200BDBB33 /* PostDetailViewController.xib */,
+			);
+			path = "Post Detail View";
+			sourceTree = "<group>";
+		};
+		416803B125025F1B00BDBB33 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				416803B225025F2B00BDBB33 /* PinterestLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		417BAA9D2500D00400B42B0E /* Posts List View */ = {
+			isa = PBXGroup;
+			children = (
+				417BAA9E2500D02800B42B0E /* PostListCell.swift */,
+				416803AF2502538D00BDBB33 /* PostListCollectionViewCell.xib */,
+				41DA23872500C66F0032F587 /* PostsListViewController.swift */,
+				4189C13C2500BC150062EE37 /* PostsListViewController.xib */,
+			);
+			path = "Posts List View";
+			sourceTree = "<group>";
+		};
+		4189C0FD2500BBC90062EE37 = {
+			isa = PBXGroup;
+			children = (
+				4189C1082500BBC90062EE37 /* DNA Insta Assignment */,
+				4189C1222500BBCA0062EE37 /* DNA Insta AssignmentTests */,
+				4189C12D2500BBCA0062EE37 /* DNA Insta AssignmentUITests */,
+				4189C1072500BBC90062EE37 /* Products */,
+				B60DCCA06D076AC5652122D6 /* Pods */,
+				AD3805A2E5781DBF7600A432 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4189C1072500BBC90062EE37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1062500BBC90062EE37 /* DNA Insta Assignment.app */,
+				4189C11F2500BBCA0062EE37 /* DNA Insta AssignmentTests.xctest */,
+				4189C12A2500BBCA0062EE37 /* DNA Insta AssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4189C1082500BBC90062EE37 /* DNA Insta Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1452500BE5F0062EE37 /* Main */,
+				4168039F2500F7F100BDBB33 /* Database */,
+				4189C1492500BF170062EE37 /* Network */,
+				4189C1482500BEE90062EE37 /* Model */,
+				4189C13E2500BC9F0062EE37 /* Routing */,
+				41DA23862500C64C0032F587 /* View */,
+				41DA23892500C6DA0032F587 /* ViewModel */,
+				4168039E2500DCE400BDBB33 /* Others */,
+				4189C1152500BBCA0062EE37 /* Assets.xcassets */,
+			);
+			path = "DNA Insta Assignment";
+			sourceTree = "<group>";
+		};
+		4189C1222500BBCA0062EE37 /* DNA Insta AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1232500BBCA0062EE37 /* PostsListViewControllerTests.swift */,
+				4189C1252500BBCA0062EE37 /* Info.plist */,
+			);
+			path = "DNA Insta AssignmentTests";
+			sourceTree = "<group>";
+		};
+		4189C12D2500BBCA0062EE37 /* DNA Insta AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4189C12E2500BBCA0062EE37 /* DNA_Insta_AssignmentUITests.swift */,
+				4189C1302500BBCA0062EE37 /* Info.plist */,
+			);
+			path = "DNA Insta AssignmentUITests";
+			sourceTree = "<group>";
+		};
+		4189C13E2500BC9F0062EE37 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1402500BD910062EE37 /* DnaInstaRouter.swift */,
+				4189C1502500C0FC0062EE37 /* Flow.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		4189C1442500BE4B0062EE37 /* View Controller Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1422500BE2F0062EE37 /* ViewControllerFactory.swift */,
+				4189C1462500BE730062EE37 /* iOSViewControllerFactory.swift */,
+			);
+			path = "View Controller Factory";
+			sourceTree = "<group>";
+		};
+		4189C1452500BE5F0062EE37 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1122500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodeld */,
+				4189C1092500BBC90062EE37 /* AppDelegate.swift */,
+				4189C10B2500BBC90062EE37 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4189C1482500BEE90062EE37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4189C1522500C22F0062EE37 /* FeedsListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4189C1492500BF170062EE37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4189C14A2500BF2B0062EE37 /* NetworkManagerProtocol.swift */,
+				4189C14C2500BF620062EE37 /* NetworkManager.swift */,
+				4189C14E2500BFC00062EE37 /* Parser.swift */,
+				4168039A2500D8F700BDBB33 /* ServiceFetchDataFromNetworkAndSaveToDatabase.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		41DA23862500C64C0032F587 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				416803B125025F1B00BDBB33 /* Layout */,
+				4189C1442500BE4B0062EE37 /* View Controller Factory */,
+				416803A425011DD800BDBB33 /* Post Detail View */,
+				417BAA9D2500D00400B42B0E /* Posts List View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41DA23892500C6DA0032F587 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41DA238A2500C7810032F587 /* PostsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD3805A2E5781DBF7600A432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87972066CF1D168C03622A16 /* Pods_DNA_Insta_Assignment.framework */,
+				9455C6741425A350277631FB /* Pods_DNA_Insta_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60DCCA06D076AC5652122D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E8975CB04BAF80708C0FB5A /* Pods-DNA Insta Assignment.debug.xcconfig */,
+				31F3CE99D38BF56FF6F097E1 /* Pods-DNA Insta Assignment.release.xcconfig */,
+				31E6908BABFDFD4142FBF7BD /* Pods-DNA Insta AssignmentTests.debug.xcconfig */,
+				774F5D7F07D11B48E2B409AC /* Pods-DNA Insta AssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4189C1052500BBC90062EE37 /* DNA Insta Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4189C1332500BBCA0062EE37 /* Build configuration list for PBXNativeTarget "DNA Insta Assignment" */;
+			buildPhases = (
+				68FBA00CB23E3EC5C3A1C96B /* [CP] Check Pods Manifest.lock */,
+				4189C1022500BBC90062EE37 /* Sources */,
+				4189C1032500BBC90062EE37 /* Frameworks */,
+				4189C1042500BBC90062EE37 /* Resources */,
+				2888997447C37EDB49F4F37F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DNA Insta Assignment";
+			productName = "DNA Insta Assignment";
+			productReference = 4189C1062500BBC90062EE37 /* DNA Insta Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4189C11E2500BBCA0062EE37 /* DNA Insta AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4189C1362500BBCA0062EE37 /* Build configuration list for PBXNativeTarget "DNA Insta AssignmentTests" */;
+			buildPhases = (
+				29ABEBA3587D078A0F280A69 /* [CP] Check Pods Manifest.lock */,
+				4189C11B2500BBCA0062EE37 /* Sources */,
+				4189C11C2500BBCA0062EE37 /* Frameworks */,
+				4189C11D2500BBCA0062EE37 /* Resources */,
+				A38AA516940ACE8C60EEDD63 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4189C1212500BBCA0062EE37 /* PBXTargetDependency */,
+			);
+			name = "DNA Insta AssignmentTests";
+			productName = "DNA Insta AssignmentTests";
+			productReference = 4189C11F2500BBCA0062EE37 /* DNA Insta AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4189C1292500BBCA0062EE37 /* DNA Insta AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4189C1392500BBCA0062EE37 /* Build configuration list for PBXNativeTarget "DNA Insta AssignmentUITests" */;
+			buildPhases = (
+				4189C1262500BBCA0062EE37 /* Sources */,
+				4189C1272500BBCA0062EE37 /* Frameworks */,
+				4189C1282500BBCA0062EE37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4189C12C2500BBCA0062EE37 /* PBXTargetDependency */,
+			);
+			name = "DNA Insta AssignmentUITests";
+			productName = "DNA Insta AssignmentUITests";
+			productReference = 4189C12A2500BBCA0062EE37 /* DNA Insta AssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4189C0FE2500BBC90062EE37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Next Bridge";
+				TargetAttributes = {
+					4189C1052500BBC90062EE37 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					4189C11E2500BBCA0062EE37 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 4189C1052500BBC90062EE37;
+					};
+					4189C1292500BBCA0062EE37 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 4189C1052500BBC90062EE37;
+					};
+				};
+			};
+			buildConfigurationList = 4189C1012500BBC90062EE37 /* Build configuration list for PBXProject "DNA Insta Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4189C0FD2500BBC90062EE37;
+			productRefGroup = 4189C1072500BBC90062EE37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4189C1052500BBC90062EE37 /* DNA Insta Assignment */,
+				4189C11E2500BBCA0062EE37 /* DNA Insta AssignmentTests */,
+				4189C1292500BBCA0062EE37 /* DNA Insta AssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4189C1042500BBC90062EE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4168039D2500DCE100BDBB33 /* sampleJson.txt in Resources */,
+				4189C1192500BBCA0062EE37 /* LaunchScreen.storyboard in Resources */,
+				416803A82501200200BDBB33 /* PostDetailViewController.xib in Resources */,
+				4189C13D2500BC150062EE37 /* PostsListViewController.xib in Resources */,
+				416803B02502538D00BDBB33 /* PostListCollectionViewCell.xib in Resources */,
+				4189C1162500BBCA0062EE37 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4189C11D2500BBCA0062EE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4189C1282500BBCA0062EE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2888997447C37EDB49F4F37F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DNA Insta Assignment/Pods-DNA Insta Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DNA Insta Assignment/Pods-DNA Insta Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DNA Insta Assignment/Pods-DNA Insta Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29ABEBA3587D078A0F280A69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DNA Insta AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68FBA00CB23E3EC5C3A1C96B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DNA Insta Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38AA516940ACE8C60EEDD63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DNA Insta AssignmentTests/Pods-DNA Insta AssignmentTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DNA Insta AssignmentTests/Pods-DNA Insta AssignmentTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DNA Insta AssignmentTests/Pods-DNA Insta AssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4189C1022500BBC90062EE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416803B325025F2B00BDBB33 /* PinterestLayout.swift in Sources */,
+				4189C14D2500BF620062EE37 /* NetworkManager.swift in Sources */,
+				4189C14F2500BFC00062EE37 /* Parser.swift in Sources */,
+				4189C10A2500BBC90062EE37 /* AppDelegate.swift in Sources */,
+				416803AA2501276700BDBB33 /* CoreDataManager.swift in Sources */,
+				4189C1142500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodeld in Sources */,
+				4189C1432500BE2F0062EE37 /* ViewControllerFactory.swift in Sources */,
+				41DA238B2500C7810032F587 /* PostsListViewModel.swift in Sources */,
+				4189C1472500BE730062EE37 /* iOSViewControllerFactory.swift in Sources */,
+				41DA23882500C66F0032F587 /* PostsListViewController.swift in Sources */,
+				4168039B2500D8F700BDBB33 /* ServiceFetchDataFromNetworkAndSaveToDatabase.swift in Sources */,
+				416803A325010CE300BDBB33 /* PostsListDatabaseManager.swift in Sources */,
+				4189C1512500C0FC0062EE37 /* Flow.swift in Sources */,
+				416803A12500F7FF00BDBB33 /* DatabaseManagerProtocol.swift in Sources */,
+				4189C1412500BD910062EE37 /* DnaInstaRouter.swift in Sources */,
+				416803A625011DF800BDBB33 /* PostDetailViewController.swift in Sources */,
+				4189C14B2500BF2B0062EE37 /* NetworkManagerProtocol.swift in Sources */,
+				4189C10C2500BBC90062EE37 /* SceneDelegate.swift in Sources */,
+				4189C1532500C22F0062EE37 /* FeedsListModel.swift in Sources */,
+				417BAA9F2500D02800B42B0E /* PostListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4189C11B2500BBCA0062EE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4189C1242500BBCA0062EE37 /* PostsListViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4189C1262500BBCA0062EE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4189C12F2500BBCA0062EE37 /* DNA_Insta_AssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4189C1212500BBCA0062EE37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4189C1052500BBC90062EE37 /* DNA Insta Assignment */;
+			targetProxy = 4189C1202500BBCA0062EE37 /* PBXContainerItemProxy */;
+		};
+		4189C12C2500BBCA0062EE37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4189C1052500BBC90062EE37 /* DNA Insta Assignment */;
+			targetProxy = 4189C12B2500BBCA0062EE37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4189C1172500BBCA0062EE37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4189C1182500BBCA0062EE37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4189C1312500BBCA0062EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4189C1322500BBCA0062EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4189C1342500BBCA0062EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8975CB04BAF80708C0FB5A /* Pods-DNA Insta Assignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DNA Insta Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nxb.DNA-Insta-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4189C1352500BBCA0062EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F3CE99D38BF56FF6F097E1 /* Pods-DNA Insta Assignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DNA Insta Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nxb.DNA-Insta-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4189C1372500BBCA0062EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E6908BABFDFD4142FBF7BD /* Pods-DNA Insta AssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DNA Insta AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nxb.DNA-Insta-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNA Insta Assignment.app/DNA Insta Assignment";
+			};
+			name = Debug;
+		};
+		4189C1382500BBCA0062EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774F5D7F07D11B48E2B409AC /* Pods-DNA Insta AssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DNA Insta AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nxb.DNA-Insta-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNA Insta Assignment.app/DNA Insta Assignment";
+			};
+			name = Release;
+		};
+		4189C13A2500BBCA0062EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DNA Insta AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nxb.DNA-Insta-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DNA Insta Assignment";
+			};
+			name = Debug;
+		};
+		4189C13B2500BBCA0062EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DNA Insta AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nxb.DNA-Insta-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DNA Insta Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4189C1012500BBC90062EE37 /* Build configuration list for PBXProject "DNA Insta Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4189C1312500BBCA0062EE37 /* Debug */,
+				4189C1322500BBCA0062EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4189C1332500BBCA0062EE37 /* Build configuration list for PBXNativeTarget "DNA Insta Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4189C1342500BBCA0062EE37 /* Debug */,
+				4189C1352500BBCA0062EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4189C1362500BBCA0062EE37 /* Build configuration list for PBXNativeTarget "DNA Insta AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4189C1372500BBCA0062EE37 /* Debug */,
+				4189C1382500BBCA0062EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4189C1392500BBCA0062EE37 /* Build configuration list for PBXNativeTarget "DNA Insta AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4189C13A2500BBCA0062EE37 /* Debug */,
+				4189C13B2500BBCA0062EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4189C1122500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4189C1132500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodel */,
+			);
+			currentVersion = 4189C1132500BBC90062EE37 /* DNA_Insta_Assignment.xcdatamodel */;
+			path = DNA_Insta_Assignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4189C0FE2500BBC90062EE37 /* Project object */;
+}
